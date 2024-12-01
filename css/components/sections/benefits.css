@@ -1,0 +1,32 @@
+/* Benefits Section Styles */
+.services-section {
+    padding: 100px 0;
+    color: #fff;
+}
+
+.bg-dark-section {
+    background-color: #212121;
+}
+
+.services-section .heading-title {
+    margin-bottom: 60px;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.services-section h2 span {
+    color: var(--primary-color);
+}
+
+.services-section .small-heading {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.services-section p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+}

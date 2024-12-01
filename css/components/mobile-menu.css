@@ -1,0 +1,72 @@
+/* Mobile Menu Styles */
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(33, 33, 33, 0.95);
+    z-index: 2000;
+    transition: right 0.3s ease;
+}
+
+#mobile-menu.active {
+    right: 0;
+}
+
+.inner-wrap {
+    padding: 50px 30px;
+}
+
+.nav_menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_menu li {
+    margin-bottom: 15px;
+}
+
+.nav_menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav_menu a:hover {
+    color: var(--primary-color);
+}
+
+/* Sub Menu */
+.nav_menu .sub-menu {
+    display: none;
+    list-style: none;
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+.nav_menu .menu-item-has-children.active .sub-menu {
+    display: block;
+}
+
+/* Animation Delays */
+#mobile-menu.active .nav_menu li {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.nav_menu li:nth-child(1) { animation-delay: 0.1s; }
+.nav_menu li:nth-child(2) { animation-delay: 0.2s; }
+.nav_menu li:nth-child(3) { animation-delay: 0.3s; }
+.nav_menu li:nth-child(4) { animation-delay: 0.4s; }
+.nav_menu li:nth-child(5) { animation-delay: 0.5s; }

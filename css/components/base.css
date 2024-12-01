@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&subset=devanagari,latin-ext');
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    font-weight: 300;
+    position: relative;
+    line-height: 1.6;
+    font-family: Poppins, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #c69c6d
+}
+
+/* Base Typography */
+.heading-title-big {
+    font-size: 3.45rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Base Colors */
+:root {
+    --primary-color: #c69c6d;
+    --text-color: #2d2d2d;
+    --background-color: #fff;
+}
+
+/* Base Layout */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Base Animations */
+@keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #c69c6d, 0 0 0 10px rgba(255,255,255,0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #c69c6d, 0 0 0 10px rgba(255,255,255,0.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}

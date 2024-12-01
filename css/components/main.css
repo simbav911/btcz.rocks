@@ -1,0 +1,14 @@
+/* Import base styles */
+@import 'base.css';
+
+/* Import component styles */
+@import 'header.css';
+@import 'mobile-menu.css';
+
+/* Import section styles */
+@import 'sections/slider.css';
+@import 'sections/about.css';
+@import 'sections/benefits.css';
+@import 'sections/exchange.css';
+@import 'sections/roadmap.css';
+@import 'sections/wallets.css';

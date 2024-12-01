@@ -1,0 +1,52 @@
+/* Wallets Section Styles */
+.section-choose-us {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.section-choose-us .heading-title {
+    margin-bottom: 50px;
+}
+
+.section-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.section-choose-us h2 span {
+    color: var(--primary-color);
+}
+
+.section-choose-us .small-desd {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.wallets_img {
+    max-width: 120px;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.wallets_img:hover {
+    transform: scale(1.1);
+}
+
+.wallet-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wallet-item h4 {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.wallet-item p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
