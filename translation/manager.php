@@ -67,7 +67,7 @@ class L
 
         $content = [];
         if (($handle = fopen(__DIR__ . "/languages/$language.csv", 'r')) !== false) {
-            while (($data = fgetcsv($handle, 1000, ',')) !== false) {
+            while (($data = fgetcsv($handle, 1000, ',', '"', '\\')) !== false) {
                 $content[$data[0]] = $data[1];
             }
 
